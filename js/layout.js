@@ -21,7 +21,6 @@ function navLinksMarkup(){
 function headerMarkup(){
   const R = rootPath();
   return `
-  <div class="announce-bar">Frete grátis para todo o Brasil em compras acima de R$ 199 · Parcele em até 3x sem juros</div>
   <header class="site-header" id="siteHeader">
     <div class="container header-row">
       <button class="icon-btn hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
