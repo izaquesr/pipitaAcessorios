@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favoritos — Pipita</title>
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/category.css">
+<link rel="stylesheet" href="../css/product.css">
+<link rel="stylesheet" href="../css/cart.css">
+<link rel="stylesheet" href="../css/account.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div data-slot="header" id="siteHeaderSlot"></div>
+
+<main id="main">
+  <div class="container">
+    <div class="page-head-simple">
+      <nav class="breadcrumb"><a href="../index.html">Início</a><span>›</span><span>Favoritos</span></nav>
+      <h1>Seus favoritos</h1>
+      <span class="result-count" id="favoritesCount"></span>
+    </div>
+    <div class="product-grid" id="favoritesGrid"></div>
+    <div class="state-block" id="favoritesEmpty">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-10-9.3C.4 8.4 2 4.8 5.6 4.1 8 3.6 10.3 4.7 12 7c1.7-2.3 4-3.4 6.4-2.9 3.6.7 5.2 4.3 3.6 7.6C19.5 16.1 12 21 12 21z"/></svg>
+      <h3>Você ainda não tem favoritos</h3>
+      <p>Toque no coração de qualquer produto para guardá-lo aqui.</p>
+      <a href="../index.html" class="btn btn-primary btn-sm">Explorar produtos</a>
+    </div>
+  </div>
+</main>
+
+<div data-slot="footer" id="siteFooterSlot"></div>
+
+<script src="../js/data.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/favorites.js"></script>
+<script src="../js/cart.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/layout.js"></script>
+</body>
+</html>

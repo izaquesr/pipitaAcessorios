@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criar conta — Pipita</title>
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="../css/cart.css">
+<link rel="stylesheet" href="../css/account.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div data-slot="header" id="siteHeaderSlot"></div>
+
+<main id="main">
+  <div class="account-wrap">
+    <span class="eyebrow" style="display:block;text-align:center">Seja bem-vinda(o)</span>
+    <h1>Criar minha conta</h1>
+    <p class="text-muted">Leva menos de um minuto — e você ganha 10% na primeira compra.</p>
+
+    <form class="account-form" id="signupForm">
+      <div class="field">
+        <label for="signupName">Nome completo</label>
+        <input type="text" id="signupName" required placeholder="Seu nome">
+      </div>
+      <div class="field">
+        <label for="signupEmail">E-mail</label>
+        <input type="email" id="signupEmail" required placeholder="voce@email.com">
+      </div>
+      <div class="field">
+        <label for="signupPass">Senha</label>
+        <input type="password" id="signupPass" required placeholder="Mínimo 6 caracteres" minlength="6">
+      </div>
+      <label class="form-check">
+        <input type="checkbox" required> Quero receber novidades e promoções por e-mail
+      </label>
+      <button type="submit" class="btn btn-primary btn-block">Criar conta</button>
+    </form>
+    <p class="account-alt">Já tem uma conta? <a href="login.html">Entrar</a></p>
+  </div>
+</main>
+
+<div data-slot="footer" id="siteFooterSlot"></div>
+
+<script src="../js/data.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/favorites.js"></script>
+<script src="../js/cart.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/layout.js"></script>
+<script>
+document.getElementById("signupForm").addEventListener("submit", e => {
+  e.preventDefault();
+  showToast("Conta criada com sucesso! Use PIPITA10 no carrinho. 🎉");
+  e.target.reset();
+});
+</script>
+</body>
+</html>

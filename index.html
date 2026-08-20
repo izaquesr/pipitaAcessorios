@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pipita — Joias e Acessórios</title>
+<meta name="description" content="Joias e acessórios folheados para elas e para eles. Colares, anéis, brincos, pulseiras e relógios com frete grátis acima de R$199.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/category.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/account.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div data-slot="header" id="siteHeaderSlot"></div>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1800&q=80" alt="Joias Pipita em destaque" onerror="handleImgError(this)">
+    </div>
+    <div class="container">
+      <div class="hero-content reveal is-visible">
+        <span class="eyebrow">Nova coleção</span>
+        <h1>Joias que contam<br>a sua história</h1>
+        <p>Peças folheadas a ouro e prata, para elas e para eles — atemporais, acessíveis e feitas para o seu dia a dia.</p>
+        <div class="hero-actions">
+          <a href="pages/categoria.html?gender=feminino" class="btn btn-gold">Comprar Feminino</a>
+          <a href="pages/categoria.html?gender=masculino" class="btn btn-outline">Comprar Masculino</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Explore</span>
+          <h2>Compre por categoria</h2>
+        </div>
+      </div>
+      <div class="cat-tiles" id="catTiles"></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Selecionados para você</span>
+          <h2>Mais vendidos</h2>
+        </div>
+        <a href="pages/categoria.html" class="link-arrow">Ver toda a coleção</a>
+      </div>
+      <div class="product-grid" id="bestSellersGrid"></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="collection-split">
+        <a class="collection-banner" href="pages/categoria.html?collection=essenciais-dourados">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=80" alt="Coleção Essenciais Dourados" onerror="handleImgError(this)">
+          <div class="collection-banner-content">
+            <span class="eyebrow">Coleção</span>
+            <h3>Essenciais Dourados</h3>
+            <span class="link-arrow">Descobrir peças</span>
+          </div>
+        </a>
+        <a class="collection-banner" href="pages/categoria.html?collection=signature-masculina">
+          <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=80" alt="Coleção Signature Masculina" onerror="handleImgError(this)">
+          <div class="collection-banner-content">
+            <span class="eyebrow">Coleção</span>
+            <h3>Signature Masculina</h3>
+            <span class="link-arrow">Descobrir peças</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Recém-chegados</span>
+          <h2>Novidades</h2>
+        </div>
+        <a href="pages/categoria.html?sort=newest" class="link-arrow">Ver tudo</a>
+      </div>
+      <div class="product-grid" id="newArrivalsGrid"></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <ul class="trust-strip">
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+          <strong>Frete grátis</strong><span>Compras acima de R$ 199</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg>
+          <strong>Troca garantida</strong><span>Até 30 dias após o recebimento</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+          <strong>3x sem juros</strong><span>Em todo o site, no cartão</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>
+          <strong>Compra segura</strong><span>Ambiente 100% protegido</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Quem usa, ama</span>
+          <h2>O que dizem sobre a Pipita</h2>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <span class="stars">★★★★★</span>
+          <p>"Comprei o colar Aurora e o acabamento é impecável. Pareço estar usando uma joia de verdade, e o preço é super acessível."</p>
+          <p class="testimonial-name">Marina S.</p>
+        </div>
+        <div class="testimonial-card">
+          <span class="stars">★★★★★</span>
+          <p>"A corrente cubana chegou rápido e é bem mais robusta do que eu esperava pelo preço. Já pedi outra pra presentear meu irmão."</p>
+          <p class="testimonial-name">Rafael T.</p>
+        </div>
+        <div class="testimonial-card">
+          <span class="stars">★★★★★</span>
+          <p>"Adorei poder trocar o tamanho do anel sem burocracia. Atendimento rápido e as peças são até mais bonitas pessoalmente."</p>
+          <p class="testimonial-name">Juliana P.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div data-slot="footer" id="siteFooterSlot"></div>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/favorites.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
+<script src="js/layout.js"></script>
+<script>
+  const catTilesData = [
+    { label:"Feminino", href:"pages/categoria.html?gender=feminino", img: PRODUCTS.find(p=>p.gender==="feminino").images[0] },
+    { label:"Masculino", href:"pages/categoria.html?gender=masculino", img: PRODUCTS.find(p=>p.gender==="masculino").images[0] },
+    { label:"Colares", href:"pages/categoria.html?category=colares", img: PRODUCTS.find(p=>p.category==="colares").images[0] },
+    { label:"Anéis", href:"pages/categoria.html?category=aneis", img: PRODUCTS.find(p=>p.category==="aneis").images[0] },
+    { label:"Joias", href:"pages/categoria.html", img: PRODUCTS.find(p=>p.category==="brincos").images[0] },
+    { label:"Coleções", href:"pages/categoria.html?view=colecoes", img: PRODUCTS.find(p=>p.category==="relogios").images[0] },
+  ];
+  document.getElementById("catTiles").innerHTML = catTilesData.map(c => `
+    <a class="cat-tile reveal is-visible" href="${c.href}">
+      ${imgTag(c.img, c.label)}
+      <span>${c.label}</span>
+    </a>`).join("");
+
+  renderProductGrid(document.getElementById("bestSellersGrid"), PRODUCTS.filter(p=>p.featured).slice(0,8));
+  renderProductGrid(document.getElementById("newArrivalsGrid"), sortProducts(PRODUCTS,"newest").slice(0,4));
+</script>
+</body>
+</html>
